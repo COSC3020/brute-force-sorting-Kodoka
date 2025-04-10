@@ -70,8 +70,3 @@ function permute(a, start)
         swap(a, start, i); // Undo the swap.
     }
 }
-
-var testArray = [7, 3, 2, 4, 1];
-var tried = permutationSort(testArray)
-console.log("Sorted array:", testArray);
-console.log("Permutations tried: ", tried);
