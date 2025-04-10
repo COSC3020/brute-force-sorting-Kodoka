@@ -27,16 +27,24 @@ most important part. Add your answer to this markdown file.
 array, so for an array of length $n$, it could feasibly generate $n!$ permutations,
 then for every permutation generated, it needs to check if the array is sorted by
 iterating through the elements of the array in with n work. For sufficiently large
-$n$, $n!$ is the dominant term, giving a runtime complexity of $\Theta(n!)$.
+$n$, $n!$ is the dominant term, giving a runtime complexity of $\Theta(n!)$.  
 
 * Best Case Input: The best case input is an already sorted array like: [1, 2, 3, 4],
-where all that's needed to do is verify the elements are sorted via checkIfSorted.
+where all that's needed to do is verify the elements are sorted via checkIfSorted.  
 
 * Worst Case Input: The worst case input is an array in reverse sorted order like:
 [4, 3, 2, 1], where every permutation will need to be generated before we're able to
-produce the properly sorted array, and verify that it's actually sorted.
+produce the properly sorted array, and verify that it's actually sorted.  
 
-* Consequences of Randomly Generated Permutations:
+* Consequences of Randomly Generated Permutations: If permutations were generated
+entirely at random from the pool of values established by the input array things
+could be very chaotic. As array size increases, with sufficiently bad luck, we
+could experience the heat death of the universe before the properly sorted array
+is produced. Of course we could always randomly generate the correct permutation
+on the first try every time as well. On average, as the probability of any
+individual element being placed in any position is equal, I believe we'd arrive
+at the correct permutation after an average $n!$ permutations, but this sounds
+like a very bad idea.  
 
 ## Sources
 
