@@ -20,3 +20,21 @@ randomly without memory instead of systematically trying them?
 
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
+
+## Sources
+
+Though I didn't end up using anything from this source, I found it while
+searching for help, and it's such a crazy cool resource for algorithms and
+visualizing how they function. You should check it out. Even with your guidance
+in class, I still struggle to visualize how some of these algorithms work, and
+it may help others, if you utilize this in class.
+https://algorithm-visualizer.org/  
+
+I referenced the following video to help with really ironing down the logic of
+permuting through all combinations, which helped me with my recursive
+permuting:  
+https://www.youtube.com/watch?v=AfxHGNRtFac  
+
+## Plagiarism Notice
+
+I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
