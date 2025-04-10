@@ -21,6 +21,23 @@ randomly without memory instead of systematically trying them?
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
 
+## My Runtime Analysis
+
+*Runtime Complexity: My code recursively generates every permutation of the input
+array, so for an array of length $n$, it could feasibly generate $n!$ permutations,
+then for every permutation generated, it needs to check if the array is sorted by
+iterating through the elements of the array in with n work. For sufficiently large
+$n$, $n!$ is the dominant term, giving a runtime complexity of $\Theta(n!)$.
+
+* Best Case Input: The best case input is an already sorted array like: [1, 2, 3, 4],
+where all that's needed to do is verify the elements are sorted via checkIfSorted.
+
+* Worst Case Input: The worst case input is an array in reverse sorted order like:
+[4, 3, 2, 1], where every permutation will need to be generated before we're able to
+produce the properly sorted array, and verify that it's actually sorted.
+
+* Consequences of Randomly Generated Permutations:
+
 ## Sources
 
 Though I didn't end up using anything from this source, I found it while
