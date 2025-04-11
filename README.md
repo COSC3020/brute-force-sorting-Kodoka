@@ -23,11 +23,12 @@ most important part. Add your answer to this markdown file.
 
 ## My Runtime Analysis
 
-*Runtime Complexity: My code recursively generates every permutation of the input
+* Runtime Complexity: My code recursively generates every permutation of the input
 array, so for an array of length $n$, it could feasibly generate $n!$ permutations,
 then for every permutation generated, it needs to check if the array is sorted by
-iterating through the elements of the array in with n work. For sufficiently large
-$n$, $n!$ is the dominant term, giving a runtime complexity of $\Theta(n!)$.  
+iterating through the elements of the array in with n work. So my code performs
+$\Theta(n \cdot n!)$ work. As $n!$ is the dominant term, growing much faster than
+$n$, the runtime complexity is $\Theta(n!)$.  
 
 * Best Case Input: The best case input is an already sorted array like: [1, 2, 3, 4],
 where all that's needed to do is verify the elements are sorted via checkIfSorted.  
